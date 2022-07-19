@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "blueimp-md5": "^2.19.0",
+    "dayjs": "^1.11.2",
+    "dot": "^1.1.3",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "graphviz": "^0.0.9",
+    "nodemon": "^2.0.16",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "dependency-cruiser": "^11.7.1",
+    "madge": "^5.0.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "check-code-coverage": "^1.10.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.16",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0",
+    "nyc": "^15.1.0"
+  },
+  "scripts": {
+    "serve": "nodemon server.js",
+    "apiTest": "mocha test --runInBand--timeout 30000 --exit",
+    "test": "jest --runInBand --coverage > ./unitTestResult.txt",
+    "acceptanceTest": "npx mocha --runInBand --spec acceptanceTest/testEzWhAPI.js --reporter mochawesome --timeout 30000 --exit",
+    "totalcoverage": "./node_modules/.bin/nyc ./node_modules/.bin/mocha test --runInBand --timeout 30000 --exit"
+  }
+}

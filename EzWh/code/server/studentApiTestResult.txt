@@ -1,0 +1,2144 @@
+Server listening at http://localhost:3001
+
+
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+connect to database
+  test get internal order by id
+    1) "before all" hook for "gets an internal order knowing the id"
+    2) "after all" hook for "modify an order state knowing the id"
+
+  test scenario 9-1 Internal Order IO accepted
+<<<<<<< HEAD
+Error running sql INSERT INTO SKU (ID,DESCRIPTION,WEIGHT,VOLUME,NOTES,POSITION,AVAILABLEQUANTITY,PRICE) VALUES (1,'an edited new sku',100.0,50.0,'first SKU',NULL,50,10.99)
+=======
+    3) "before all" hook for "add an internal order"
+
+  Retrieve an item by its id
+Error running sql INSERT INTO SKU (ID,DESCRIPTION,WEIGHT,VOLUME,NOTES,POSITION,AVAILABLEQUANTITY,PRICE) VALUES (3,'a new new sku',100.0,50.0,'third SKU',NULL,30,10.99)
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+[Error: SQLITE_ERROR: no such table: SKU] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+<<<<<<< HEAD
+    3) "before all" hook for "add an internal order"
+
+  Retrieve an item by its id
+    ✔ Should find an existing item by its id
+    ✔ Should find an existing item by its id
+    ✔ Should find an existing item by its id
+    4) "after all" hook for "Should find an existing item by its id"
+=======
+    4) "before all" hook for "Should find an existing item by its id"
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+
+  Create a new item
+Error running sql INSERT INTO ITEMS VALUES(?,?,?,?,?)
+[Error: SQLITE_ERROR: no such table: ITEMS] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+[Error: SQLITE_ERROR: no such table: ITEMS] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+id passed verification
+Error running sql INSERT INTO SKU (ID,DESCRIPTION,WEIGHT,VOLUME,NOTES,POSITION,AVAILABLEQUANTITY,PRICE) VALUES (1,'an edited new sku',100.0,50.0,'first SKU',NULL,50,10.99)
+[Error: SQLITE_CONSTRAINT: UNIQUE constraint failed: SKU.id] {
+  errno: 19,
+  code: 'SQLITE_CONSTRAINT'
+}
+req body {}
+id 10
+skuid e supplierid 3   1
+Lista skus [
+  {
+    id: 1,
+    description: 'this is a sku',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 2,
+    description: 'this is a sku2',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 3,
+    description: 'this is a sku3',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  }
+]
+Result in item.js { id: 1, changes: 1 }
+<ref *2> Response {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  res: <ref *1> IncomingMessage {
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: true,
+      endEmitted: true,
+      reading: false,
+      constructed: true,
+      sync: true,
+      needReadable: false,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      destroyed: true,
+      errored: null,
+      closed: true,
+      closeEmitted: true,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: true,
+      dataEmitted: true,
+      decoder: [StringDecoder],
+      encoding: 'utf8',
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      data: [Array],
+      error: [Array],
+      close: [Function: bound emit]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 397,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    httpVersionMajor: 1,
+    httpVersionMinor: 1,
+    httpVersion: '1.1',
+    complete: true,
+    rawHeaders: [
+      'X-Powered-By',
+      'Express',
+      'Content-Type',
+      'application/json; charset=utf-8',
+      'Content-Length',
+      '16',
+      'ETag',
+      'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      'Date',
+      'Wed, 08 Jun 2022 19:05:08 GMT',
+      'Connection',
+      'close'
+    ],
+    rawTrailers: [],
+    aborted: false,
+    upgrade: false,
+    url: '',
+    method: null,
+    statusCode: 201,
+    statusMessage: 'Created',
+    client: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 397,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _consuming: false,
+    _dumped: false,
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 75,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 75\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [Circular *1],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    text: '{"message":"ok"}',
+    [Symbol(kCapture)]: false,
+    [Symbol(kHeaders)]: {
+      'x-powered-by': 'Express',
+      'content-type': 'application/json; charset=utf-8',
+      'content-length': '16',
+      etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+      connection: 'close'
+    },
+    [Symbol(kHeadersCount)]: 12,
+    [Symbol(kTrailers)]: null,
+    [Symbol(kTrailersCount)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  request: Test {
+    _events: [Object: null prototype] {
+      response: [Function (anonymous)],
+      redirect: [Array]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _agent: false,
+    _formData: null,
+    method: 'post',
+    url: 'http://127.0.0.1:58960/api/item',
+    _header: {
+      'user-agent': 'node-superagent/3.8.3',
+      'content-type': 'application/json'
+    },
+    header: {
+      'User-Agent': 'node-superagent/3.8.3',
+      'Content-Type': 'application/json'
+    },
+    writable: true,
+    _redirects: 0,
+    _maxRedirects: 5,
+    cookies: '',
+    qs: {},
+    _query: [],
+    qsRaw: [],
+    _redirectList: [],
+    _streamRequest: false,
+    app: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 0,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::0',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 20
+    },
+    _okCallback: [Function (anonymous)],
+    _data: {
+      id: 10,
+      description: 'description',
+      price: '10',
+      SKUId: 3,
+      supplierId: 1
+    },
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 75,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 75\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    protocol: 'http:',
+    host: '127.0.0.1:58960',
+    _endCalled: true,
+    _callback: [Function (anonymous)],
+    _fullfilledPromise: Promise { [Circular *2] },
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    response: [Circular *2],
+    called: true,
+    [Symbol(kCapture)]: false
+  },
+  req: <ref *3> ClientRequest {
+    _events: [Object: null prototype] {
+      drain: [Function],
+      error: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 75,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 397,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'POST /api/item HTTP/1.1\r\n' +
+      'Host: 127.0.0.1:58960\r\n' +
+      'Accept-Encoding: gzip, deflate\r\n' +
+      'User-Agent: node-superagent/3.8.3\r\n' +
+      'Content-Type: application/json\r\n' +
+      'Content-Length: 75\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/api/item',
+    _ended: true,
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *3],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: '127.0.0.1',
+    protocol: 'http:',
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      host: [Array],
+      'accept-encoding': [Array],
+      'user-agent': [Array],
+      'content-type': [Array],
+      'content-length': [Array]
+    }
+  },
+  text: '{"message":"ok"}',
+  body: { message: 'ok' },
+  files: undefined,
+  buffered: true,
+  headers: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  header: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  status: 201,
+  statusType: 2,
+  info: false,
+  ok: true,
+  redirect: false,
+  clientError: false,
+  serverError: false,
+  error: false,
+  created: true,
+  accepted: false,
+  noContent: false,
+  badRequest: false,
+  unauthorized: false,
+  notAcceptable: false,
+  forbidden: false,
+  notFound: false,
+  unprocessableEntity: false,
+  type: 'application/json',
+  charset: 'utf-8',
+  links: {},
+  setEncoding: [Function: bound ],
+  redirects: [],
+  [Symbol(kCapture)]: false
+}
+    5) Should add a new item in the collection
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express\lib\response.js:776:10)
+    at ServerResponse.send (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express\lib\response.js:267:15)
+    at D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\routes\Users.js:75:21
+    at Layer.handle [as handle_request] (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express\lib\router\route.js:137:13)
+    at middleware (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+    ✔ Should add a new item in the collection (38ms)
+id passed verification
+req body {}
+id 12
+skuid e supplierid 2   293
+Lista skus [
+  {
+    id: 1,
+    description: 'this is a sku',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 2,
+    description: 'this is a sku2',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 3,
+    description: 'this is a sku3',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  }
+]
+Result in item.js { id: 2, changes: 1 }
+<ref *2> Response {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  res: <ref *1> IncomingMessage {
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: true,
+      endEmitted: true,
+      reading: false,
+      constructed: true,
+      sync: true,
+      needReadable: false,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      destroyed: true,
+      errored: null,
+      closed: true,
+      closeEmitted: true,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: true,
+      dataEmitted: true,
+      decoder: [StringDecoder],
+      encoding: 'utf8',
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      data: [Array],
+      error: [Array],
+      close: [Function: bound emit]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 483,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    httpVersionMajor: 1,
+    httpVersionMinor: 1,
+    httpVersion: '1.1',
+    complete: true,
+    rawHeaders: [
+      'X-Powered-By',
+      'Express',
+      'Content-Type',
+      'application/json; charset=utf-8',
+      'Content-Length',
+      '16',
+      'ETag',
+      'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      'Date',
+      'Wed, 08 Jun 2022 19:05:08 GMT',
+      'Connection',
+      'close'
+    ],
+    rawTrailers: [],
+    aborted: false,
+    upgrade: false,
+    url: '',
+    method: null,
+    statusCode: 201,
+    statusMessage: 'Created',
+    client: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 483,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _consuming: false,
+    _dumped: false,
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 77,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 77\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [Circular *1],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    text: '{"message":"ok"}',
+    [Symbol(kCapture)]: false,
+    [Symbol(kHeaders)]: {
+      'x-powered-by': 'Express',
+      'content-type': 'application/json; charset=utf-8',
+      'content-length': '16',
+      etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+      connection: 'close'
+    },
+    [Symbol(kHeadersCount)]: 12,
+    [Symbol(kTrailers)]: null,
+    [Symbol(kTrailersCount)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  request: Test {
+    _events: [Object: null prototype] {
+      response: [Function (anonymous)],
+      redirect: [Array]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _agent: false,
+    _formData: null,
+    method: 'post',
+    url: 'http://127.0.0.1:58960/api/item',
+    _header: {
+      'user-agent': 'node-superagent/3.8.3',
+      'content-type': 'application/json'
+    },
+    header: {
+      'User-Agent': 'node-superagent/3.8.3',
+      'Content-Type': 'application/json'
+    },
+    writable: true,
+    _redirects: 0,
+    _maxRedirects: 5,
+    cookies: '',
+    qs: {},
+    _query: [],
+    qsRaw: [],
+    _redirectList: [],
+    _streamRequest: false,
+    app: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 0,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::0',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 20
+    },
+    _okCallback: [Function (anonymous)],
+    _data: {
+      id: 12,
+      description: 'description',
+      price: '11',
+      SKUId: 2,
+      supplierId: 293
+    },
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 77,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 77\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    protocol: 'http:',
+    host: '127.0.0.1:58960',
+    _endCalled: true,
+    _callback: [Function (anonymous)],
+    _fullfilledPromise: Promise { [Circular *2] },
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    response: [Circular *2],
+    called: true,
+    [Symbol(kCapture)]: false
+  },
+  req: <ref *3> ClientRequest {
+    _events: [Object: null prototype] {
+      drain: [Function],
+      error: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 77,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 483,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'POST /api/item HTTP/1.1\r\n' +
+      'Host: 127.0.0.1:58960\r\n' +
+      'Accept-Encoding: gzip, deflate\r\n' +
+      'User-Agent: node-superagent/3.8.3\r\n' +
+      'Content-Type: application/json\r\n' +
+      'Content-Length: 77\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/api/item',
+    _ended: true,
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *3],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: '127.0.0.1',
+    protocol: 'http:',
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      host: [Array],
+      'accept-encoding': [Array],
+      'user-agent': [Array],
+      'content-type': [Array],
+      'content-length': [Array]
+    }
+  },
+  text: '{"message":"ok"}',
+  body: { message: 'ok' },
+  files: undefined,
+  buffered: true,
+  headers: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  header: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  status: 201,
+  statusType: 2,
+  info: false,
+  ok: true,
+  redirect: false,
+  clientError: false,
+  serverError: false,
+  error: false,
+  created: true,
+  accepted: false,
+  noContent: false,
+  badRequest: false,
+  unauthorized: false,
+  notAcceptable: false,
+  forbidden: false,
+  notFound: false,
+  unprocessableEntity: false,
+  type: 'application/json',
+  charset: 'utf-8',
+  links: {},
+  setEncoding: [Function: bound ],
+  redirects: [],
+  [Symbol(kCapture)]: false
+}
+    6) Should add a new item in the collection
+id passed verification
+req body {}
+id 13
+skuid e supplierid 270   1
+Lista skus [
+  {
+    id: 1,
+    description: 'this is a sku',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 2,
+    description: 'this is a sku2',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  },
+  {
+    id: 3,
+    description: 'this is a sku3',
+    weight: 60,
+    volume: 80,
+    notes: 'no notes',
+    position: null,
+    availableQuantity: 10,
+    price: 15.99,
+    testDescriptors: '[null]'
+  }
+]
+Result in item.js { id: 3, changes: 1 }
+<ref *2> Response {
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  res: <ref *1> IncomingMessage {
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: true,
+      endEmitted: true,
+      reading: false,
+      constructed: true,
+      sync: true,
+      needReadable: false,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      destroyed: true,
+      errored: null,
+      closed: true,
+      closeEmitted: true,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: true,
+      dataEmitted: true,
+      decoder: [StringDecoder],
+      encoding: 'utf8',
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      data: [Array],
+      error: [Array],
+      close: [Function: bound emit]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 529,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    httpVersionMajor: 1,
+    httpVersionMinor: 1,
+    httpVersion: '1.1',
+    complete: true,
+    rawHeaders: [
+      'X-Powered-By',
+      'Express',
+      'Content-Type',
+      'application/json; charset=utf-8',
+      'Content-Length',
+      '16',
+      'ETag',
+      'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      'Date',
+      'Wed, 08 Jun 2022 19:05:08 GMT',
+      'Connection',
+      'close'
+    ],
+    rawTrailers: [],
+    aborted: false,
+    upgrade: false,
+    url: '',
+    method: null,
+    statusCode: 201,
+    statusMessage: 'Created',
+    client: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [ClientRequest],
+      [Symbol(async_id_symbol)]: 529,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _consuming: false,
+    _dumped: false,
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 77,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 77\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [Circular *1],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    text: '{"message":"ok"}',
+    [Symbol(kCapture)]: false,
+    [Symbol(kHeaders)]: {
+      'x-powered-by': 'Express',
+      'content-type': 'application/json; charset=utf-8',
+      'content-length': '16',
+      etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+      date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+      connection: 'close'
+    },
+    [Symbol(kHeadersCount)]: 12,
+    [Symbol(kTrailers)]: null,
+    [Symbol(kTrailersCount)]: 0,
+    [Symbol(RequestTimeout)]: undefined
+  },
+  request: Test {
+    _events: [Object: null prototype] {
+      response: [Function (anonymous)],
+      redirect: [Array]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _agent: false,
+    _formData: null,
+    method: 'post',
+    url: 'http://127.0.0.1:58960/api/item',
+    _header: {
+      'user-agent': 'node-superagent/3.8.3',
+      'content-type': 'application/json'
+    },
+    header: {
+      'User-Agent': 'node-superagent/3.8.3',
+      'Content-Type': 'application/json'
+    },
+    writable: true,
+    _redirects: 0,
+    _maxRedirects: 5,
+    cookies: '',
+    qs: {},
+    _query: [],
+    qsRaw: [],
+    _redirectList: [],
+    _streamRequest: false,
+    app: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 0,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      keepAliveTimeout: 5000,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      headersTimeout: 60000,
+      requestTimeout: 0,
+      _connectionKey: '6::::0',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 20
+    },
+    _okCallback: [Function (anonymous)],
+    _data: {
+      id: 13,
+      description: 'description',
+      price: '12',
+      SKUId: 270,
+      supplierId: 1
+    },
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 77,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [Socket],
+      _header: 'POST /api/item HTTP/1.1\r\n' +
+        'Host: 127.0.0.1:58960\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'User-Agent: node-superagent/3.8.3\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Content-Length: 77\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/item',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '127.0.0.1',
+      protocol: 'http:',
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    protocol: 'http:',
+    host: '127.0.0.1:58960',
+    _endCalled: true,
+    _callback: [Function (anonymous)],
+    _fullfilledPromise: Promise { [Circular *2] },
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [ClientRequest],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    response: [Circular *2],
+    called: true,
+    [Symbol(kCapture)]: false
+  },
+  req: <ref *3> ClientRequest {
+    _events: [Object: null prototype] {
+      drain: [Function],
+      error: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 77,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 529,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'POST /api/item HTTP/1.1\r\n' +
+      'Host: 127.0.0.1:58960\r\n' +
+      'Accept-Encoding: gzip, deflate\r\n' +
+      'User-Agent: node-superagent/3.8.3\r\n' +
+      'Content-Type: application/json\r\n' +
+      'Content-Length: 77\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/api/item',
+    _ended: true,
+    res: <ref *1> IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 201,
+      statusMessage: 'Created',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *3],
+      text: '{"message":"ok"}',
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 12,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: '127.0.0.1',
+    protocol: 'http:',
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      host: [Array],
+      'accept-encoding': [Array],
+      'user-agent': [Array],
+      'content-type': [Array],
+      'content-length': [Array]
+    }
+  },
+  text: '{"message":"ok"}',
+  body: { message: 'ok' },
+  files: undefined,
+  buffered: true,
+  headers: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  header: {
+    'x-powered-by': 'Express',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '16',
+    etag: 'W/"10-/VnJyQBB0+b7i4NY83P42KKVWsM"',
+    date: 'Wed, 08 Jun 2022 19:05:08 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  status: 201,
+  statusType: 2,
+  info: false,
+  ok: true,
+  redirect: false,
+  clientError: false,
+  serverError: false,
+  error: false,
+  created: true,
+  accepted: false,
+  noContent: false,
+  badRequest: false,
+  unauthorized: false,
+  notAcceptable: false,
+  forbidden: false,
+  notFound: false,
+  unprocessableEntity: false,
+  type: 'application/json',
+  charset: 'utf-8',
+  links: {},
+  setEncoding: [Function: bound ],
+  redirects: [],
+  [Symbol(kCapture)]: false
+}
+    7) Should add a new item in the collection
+
+  Modify a position by its old id
+    8) should modify the information of a position
+[
+  {
+    positionID: '336533653365',
+    AISLEID: '1',
+    ROW: '2',
+    COL: '3',
+    MAXWEIGHT: '4',
+    MAXVOLUME: '5',
+    OCCUPIEDWEIGHT: '0',
+    OCCUPIEDVOLUME: '0'
+  }
+]
+    ✔ should list all the positions
+<<<<<<< HEAD
+positionservice position {
+  positionID: '336533653365',
+  AISLEID: '1',
+  ROW: '2',
+  COL: '3',
+  MAXWEIGHT: '4',
+  MAXVOLUME: '5',
+  OCCUPIEDWEIGHT: '0',
+  OCCUPIEDVOLUME: '0'
+}
+    ✔ should delete an existing position (95ms)
+
+  Test RESTOCK ORDERS APIs
+    7) "before all" hook in "Test RESTOCK ORDERS APIs"
+    8) "after all" hook in "Test RESTOCK ORDERS APIs"
+
+  test add return order
+=======
+    9) should delete an existing position
+
+  Test RESTOCK ORDERS APIs
+    10) "before all" hook in "Test RESTOCK ORDERS APIs"
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+Error running sql insert into SKUITEM(RFID,SKUId,Available,DateOfStock) VALUES(?,?,0,?)
+[Error: SQLITE_ERROR: no such table: SKUITEM] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+<<<<<<< HEAD
+    9) "before all" hook for "add return order"
+    10) "after all" hook for "gets a return order knowing the id"
+
+  test skuItem apis
+    11) "before all" hook for "adding a new SKUItme"
+
+  test sku apis
+1
+    ✔ updating a SKU (139ms)
+    ✔ updating a SKU
+    ✔ updating a SKU
+    ✔ setting position for SKU (114ms)
+=======
+    11) "after all" hook in "Test RESTOCK ORDERS APIs"
+
+  test add return order
+    12) "before all" hook for "add return order"
+    13) "after all" hook for "gets a return order knowing the id"
+
+  test skuItem apis
+Error running sql INSERT INTO SKU (ID,DESCRIPTION,WEIGHT,VOLUME,NOTES,POSITION,AVAILABLEQUANTITY,PRICE) VALUES (4,'a fourth new sku',100.0,32.0,'fourth SKU',NULL,10,52.99)
+[Error: SQLITE_ERROR: no such table: SKU] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+{ id: 1 }
+    ✔ adding a new SKUItme (141ms)
+Error running sql insert into SKUITEM(RFID,SKUId,Available,DateOfStock) VALUES(?,?,0,?)
+[Error: SQLITE_CONSTRAINT: UNIQUE constraint failed: SKUITEM.RFID] {
+  errno: 19,
+  code: 'SQLITE_CONSTRAINT'
+}
+[Error: SQLITE_CONSTRAINT: UNIQUE constraint failed: SKUITEM.RFID] {
+  errno: 19,
+  code: 'SQLITE_CONSTRAINT'
+}
+    ✔ adding a new SKUItme
+    ✔ adding a new SKUItme
+    ✔ adding a new SKUItme
+    ✔ adding a new SKUItme
+
+  test sku apis
+1
+    ✔ updating a SKU (117ms)
+    ✔ updating a SKU
+    ✔ updating a SKU
+    ✔ setting position for SKU (109ms)
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+    ✔ setting position for SKU
+    ✔ setting position for SKU
+    ✔ setting position for SKU
+    ✔ setting position for SKU
+    ✔ setting position for SKU
+
+  test testResult apis
+<<<<<<< HEAD
+    12) "before all" hook for "adding a Test Result"
+
+  Test POST new user
+lo username non è undefined
+    ✔ should add a new user to the db (142ms)
+
+  TEST PUT MODIFY USER
+object { id: 3, changes: 1 }
+    ✔ should modify the rights of an existing user (178ms)
+
+
+  16 passing (29s)
+  12 failing
+=======
+    ✔ adding a Test Result (94ms)
+    ✔ adding a Test Result
+    ✔ adding a Test Result
+    ✔ finding a testResult by rfid and id
+    ✔ finding a testResult by rfid and id
+    ✔ finding a testResult by rfid and id
+    ✔ finding a testResult by rfid and id
+
+  Test POST new user
+lo username non è undefined
+    ✔ should add a new user to the db (139ms)
+
+  TEST PUT MODIFY USER
+object { id: 3, changes: 1 }
+    ✔ should modify the rights of an existing user (128ms)
+
+
+  25 passing (27s)
+  13 failing
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+
+  1) test get internal order by id
+       "before all" hook for "gets an internal order knowing the id":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testInternalOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  2) test get internal order by id
+       "after all" hook for "modify an order state knowing the id":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testInternalOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  3) test scenario 9-1 Internal Order IO accepted
+       "before all" hook for "add an internal order":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testInternalOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  4) Retrieve an item by its id
+<<<<<<< HEAD
+       "after all" hook for "Should find an existing item by its id":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testItemRouter.js)
+=======
+       "before all" hook for "Should find an existing item by its id":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testItemRouter.js)
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  5) Create a new item
+<<<<<<< HEAD
+       "before all" hook for "Should add a new item in the collection":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testItemRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+=======
+       Should add a new item in the collection:
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+
+      AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 201
+      + expected - actual
+
+      -201
+      +200
+      
+      at D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testItemRouter.js:141:33
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  6) Create a new item
+       Should add a new item in the collection:
+
+      AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 404 but got 201
+      + expected - actual
+
+      -201
+      +404
+      
+      at D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testItemRouter.js:141:33
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  7) Create a new item
+       Should add a new item in the collection:
+
+      AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 404 but got 201
+      + expected - actual
+
+      -201
+      +404
+      
+      at D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testItemRouter.js:141:33
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  8) Modify a position by its old id
+       should modify the information of a position:
+
+      AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 422
+      + expected - actual
+
+      -422
+      +200
+      
+      at C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testPositionRouter.js:55:33
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+<<<<<<< HEAD
+  7) Test RESTOCK ORDERS APIs
+=======
+  9) Modify a position by its old id
+       should delete an existing position:
+
+      AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 204 but got 422
+      + expected - actual
+
+      -422
+      +204
+      
+      at D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testPositionRouter.js:77:33
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  10) Test RESTOCK ORDERS APIs
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+       "before all" hook in "Test RESTOCK ORDERS APIs":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testRestockOrdsRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+<<<<<<< HEAD
+  8) Test RESTOCK ORDERS APIs
+=======
+  11) Test RESTOCK ORDERS APIs
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+       "after all" hook in "Test RESTOCK ORDERS APIs":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testRestockOrdsRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  9) test add return order
+       "before all" hook for "add return order":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testReturnOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+<<<<<<< HEAD
+  10) test add return order
+=======
+  12) test add return order
+       "before all" hook for "add return order":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (D:\Polito\SoftwareEngineering\project\EZWarehouse\New EZWH\EzWh\code\server\test\testReturnOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  13) test add return order
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+       "after all" hook for "gets a return order knowing the id":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testReturnOrderRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+<<<<<<< HEAD
+  11) test skuItem apis
+       "before all" hook for "adding a new SKUItme":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testSKUItemRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+  12) test testResult apis
+       "before all" hook for "adding a Test Result":
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\shado\Documents\lm\SoftwareEngineering\Group38\EzWh\code\server\test\testTestResultRouter.js)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+=======
+>>>>>>> d01c77a22c39f2edc51fd74806d76412ef92dd32
+
+

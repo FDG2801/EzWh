@@ -1,0 +1,1 @@
+exports.findPosition=jest.fn();

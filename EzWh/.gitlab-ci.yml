@@ -1,0 +1,24 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+
+cache:
+  paths:
+    - code/server/node_modules/
+
+install_dependencies:
+  stage: build
+  script:
+    - cd code/server/ 
+    - npm install
+  artifacts:
+    paths:
+      - code/server/node_modules/
+
+test_with_mocha:
+  stage: test
+  script:
+    - cd code/server/
+    - npm run acceptanceTest
